@@ -1,0 +1,24 @@
+Включіть Traffic Flow:
+Зайдіть в консоль MikroTik і введіть такі команди:
+
+/ip traffic-flow
+set enabled=yes
+
+
+Для перегляду списку підключених пристроїв до MikroTik RouterOS, ви можете використовувати команду /ip arp або ip neighbor:
+
+Через командний рядок (CLI):
+Введіть наступну команду в консоль MikroTik:
+
+
+/ip arp print
+Або
+
+
+/ip neighbor print
+
+
+
+Для перегляду пропущеного трафіку використайте цю команду
+
+/interface monitor ether1
