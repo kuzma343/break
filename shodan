@@ -1,0 +1,10 @@
+shodan
+Аутентифікація з ключем:
+shodan init YOUR_API_KEY
+
+
+Використання Shodan CLI для пошуку:
+shodan host IP_ADDRESS
+
+
+
