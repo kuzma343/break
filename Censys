@@ -1,0 +1,20 @@
+Censys 
+Імпортування бібліотеки та конфігурування ключів:
+from censys.search import CensysHosts
+c = CensysHosts(api_id="YOUR_API_ID", api_secret="YOUR_SECRET")
+
+
+Пошук інформації про IP або домен:
+result = c.view("google.com")
+print(result)
+
+Здійснення пошуку за певними параметрами:
+for cert in c.search("80.http.get.headers.server: nginx"):
+    print(cert)
+
+
+Отримання даних про сертифікати SSL:
+certificates = c.get_certificates_for_domain("example.com")
+for cert in certificates:
+    print(cert)
+
